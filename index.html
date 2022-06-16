@@ -17,17 +17,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Templte two</title>
+ 
 </head>
 
 <body>
     <!-- Start header-->
     <header>
-        <div class="container">
+        <div class="container" id='container'>
             <a href="#" class="logo"> <img src="images/logo.png" alt="">
             </a>
             <nav>
-                <i class="fas fa-align-justify align-lines"></i>
-                <ul>
+                <i class="fas fa-align-justify align-lines" id="burger-btn"></i>
+                <ul id="links-list">
                     <li> <a href="index.html" class="active"> Home </a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#Portfolio">Portfolio</a></li>
@@ -35,7 +36,8 @@
                     <li><a href="#Pricing">Pricing</a></li>
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
-                <div class="search">
+                <div class="search" id="search">
+                    <input type="text" placeholder="search" id="searchInput" />
                     <i class="fas fa-search search-button"></i>
                 </div>
             </nav>
@@ -471,6 +473,7 @@
         </div>
     </footer>
     <!--End footer-->
+    <script type="text/javascript" src="./index.js" ></script>
 </body>
 
 </html>
